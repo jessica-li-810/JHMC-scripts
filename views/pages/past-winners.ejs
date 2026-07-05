@@ -198,6 +198,33 @@
                     "Creative Thinking": [{name: "Kaiyu Wang, Alice Wang"}]
                 }
             }
+        },
+        2026: {
+            "In-Person": {
+                A: {
+                    "7th Grade Individual": [{name: ""}],
+                    "7th Grade Team": [{name: ", , , "}],
+                    "8th Grade Individual": [{name: ""}],
+                    "8th Grade Team": [{name: ", , ,"}],
+                    "Creative Thinking": [{name: ", "}]
+                },
+                AA: {
+                    "7th Grade Individual": [{name: ""}],
+                    "7th Grade Team": [{name: ", , ,"}],
+                    "8th Grade Individual": [{name: ""}],
+                    "8th Grade Team": [{name: ", , ,"}],
+                    "Creative Thinking": [{name: ","}]
+                }
+            },
+            "Virtual": {
+                "Combined A & AA": {
+                    "7th Grade Individual": [{name: ""}],
+                    "7th Grade Team": [{name: ", , ,"}],
+                    "8th Grade Individual": [{name: ""}],
+                    "8th Grade Team": [{name: ", , ,"}],
+                    "Creative Thinking": [{name: ", "}]
+                }
+            }
         }
     };
 
@@ -300,7 +327,7 @@
         const yearSelect = document.getElementById('year-select');
         const modeSelect = document.getElementById('mode-select');
         // Set default to most recent year and In-Person
-        yearSelect.value = "2025";
+        yearSelect.value = "2026";
         modeSelect.value = "In-Person";
         renderWinners(yearSelect.value, modeSelect.value);
 
@@ -339,6 +366,7 @@
                     <option value="2023">2023</option>
                     <option value="2024">2024</option>
                     <option value="2025">2025</option>
+                    <option value="2026">2026</option>
                 </select>
                 <label for="mode-select" style="margin-left:16px;"><strong>Mode:</strong></label>
                 <select id="mode-select" class="form-select d-inline-block" style="width:auto;">
